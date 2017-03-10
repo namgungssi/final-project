@@ -2,38 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BEER LOCATION</title>
-  <meta name= "viewport" content= "initial-scale= 1.0">
-  <meta charset= "utf-8">
+  <title>Hello World</title>
 
   <style>
   #map{
-    height: 100;
-  }
-
-  html{
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 400px;
+    background-color: grey;
   }
   </style>
-
 </head>
 <body>
-
-  <div id= "map"></div> <!--Document object model (DOM)-->
-
-  <script>
-  var map;
-  function initMap(){
-    map= new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 47.608013, lng: -122.335167}, //Seattle Location
-      zoom: 8
-    });
-  }
-  </script>
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
-  type= "text/javascript"></script>
+  <h3>Google Maps Demo</h3>
+  <div id= "map"></div>
 </body>
 </html>
