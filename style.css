@@ -1,5 +1,5 @@
-h3{
-  font-family: Impact, fantasy;
-  font-size: 48pt;
-  display: block;
-}
+  h1{
+    font-family: fantasy, impact;
+    font-weight: bold;
+    font-style: italic;
+  }
