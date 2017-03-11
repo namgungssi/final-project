@@ -61,3 +61,19 @@ fieldset {
 ul{
   margin: 0 auto;
 }
+
+#link-bar{
+  padding: .5em;
+  display: flex;
+  flex-direction: row;
+  position:fixed;
+  right: 0;
+  top: 0%;
+  background-color: white;
+  color: black;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 5px;
+}
