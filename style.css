@@ -54,8 +54,8 @@ a{
   text-align: center;
   font-size: 30px;
   font-family: fantasy;
-  font-style: italic;
   color: navy;
+  text-decoration: none;
 }
 
 fieldset {
