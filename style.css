@@ -1,6 +1,8 @@
 html{
   text-align: center;
   background-color: ivory;
+  display: block;
+  border: 15px solid black;
 }
 
 h1{
@@ -21,8 +23,7 @@ body{
   text-align: center;
   position: relative;
   width: 100%;
-  display: block;
-  border: 10px solid black;
+  
 }
 
 head{
