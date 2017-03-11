@@ -94,6 +94,12 @@ ul{
   margin-left: auto;
   margin-right: auto;
 }
+
+th{
+  -moz-box-shadow: 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px #777777;
+  box-shadow: 5px 5px #777777;
+}
 /*
 div id= "two"{
 max-width: 0;
