@@ -2,16 +2,17 @@
 <!DOCTYPE html>
 <html>
 
-<<div>
+<div id="two">
   <head>
     <h1>G O O G L E _ M A P _ D E M O</h1>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet"/>
-    <href= "http://www.webpage.com"/>
-    <src= "app.js">
+    <link href= "http://www.webpage.com"/>
+    <link src= "app.js">
+  </head>
 
-
-    <br>
+  <br>
+  <body>
     <fieldset>
       <br>
       <br>
@@ -21,82 +22,77 @@
 
       <form>
         <ul>
-          <table width= "400" cellpadding= "10" cellspacing= "5">
+          <table width= "500" cellpadding= "10" cellspacing= "5">
             <tr>
-              <th><li><a href="">PLACE ONE</th>
-                <th><li><a href="">PLACE TWO</th>
-                  <th><li><a href="">PLACE THREE</th>
-                    <th><li><a href="">PLACE FOUR</th>
-                      <th><li><a href="">PLACE FIVE</th>
-                        <th><li><a href="">PLACE SIX</th>
-                          <th><li><a href="">PLACE SEVEN</th>
-                            <th><li><a href="">PLACE EIGHT</th>
-                              <th><li><a href="">PLACE NINE</th>
-                                <th><li><a href="">PLACE TEN</th>
-                                </tr>
-                                <table>
-                                </ul>
-                              </form>
-                              <br>
-                              <br>
+              <th><a href="">PLACE ONE</th>
+              <th><a href="">PLACE TWO</th>
+              <th><a href="">PLACE THREE</th>
+              <th><a href="">PLACE FOUR</th>
+              <th><a href="">PLACE FIVE</th>
+              <th><a href="">PLACE SIX</th>
+              <th><a href="">PLACE SEVEN</th>
+              <th><a href="">PLACE EIGHT</th>
+              <th><a href="">PLACE NINE</th>
+              <th><a href="">PLACE TEN</th>
+            </tr>
+          </table>
+        </ul>
+      </form>
+    <br>
+  <br>
 
-                              <fieldset>
-                                <p>PLEASE SELECT LOCATION ABOVE FOR DIRECTIONS</p>
-                              </fieldset>
-                            </fieldset>
+      <fieldset>
+        <p>PLEASE SELECT LOCATION ABOVE FOR DIRECTIONS</p>
+      </fieldset>
+    </fieldset>
+</div id="two">
+  <br>
+<br>
 
-                            <br>
-                            <br>
+<div id= "map"></div>
 
-                            <div id= "map"></div>
+<br>
+<br>
 
-                            <br>
-                            <br>
+<fieldset>
+<style>
+    #map{
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+      </style>
 
-                            <fieldset>
-                            <style>
+      <script>
+      function initMap(){
+        var uluru= {lat: 47.608013, lng: -122.335167};
+        var map= new google.maps.Map(document.getElementById('map'),{
+          zoom: 4,
+          center: uluru
+        });
+        var maker= new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      </script>
 
-                            #map{
-                              width: 100%;
-                              height: 400px;
-                              background-color: grey;
-                            }
-                            </style>
-                          </head>
+      <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
+      </script>
+      <p><a href= "http://www.thebeerstore.ca/beer-101" target= "_black">Beer Newbies Click Here</a></p>
+    </fieldset>
 
-                          <body>
+    <section id= "link-bar">
+      <img class= "link-bar" src= "images\fb.png" alt="">
+      <img class= "link-bar" src= "images\twitter.png" alt="">
+      <img class= "link-bar" src= "images\instagram.png" alt="">
+    </section>
 
-                            <script>
-                            function initMap(){
-                              var uluru= {lat: 47.608013, lng: -122.335167};
-                              var map= new google.maps.Map(document.getElementById('map'),{
-                                zoom: 4,
-                                center: uluru
-                              });
-                              var maker= new google.maps.Marker({
-                                position: uluru,
-                                map: map
-                              });
-                            }
-                            </script>
+    <br>
+    <br>
+    <footer>Code 201 Final Project</footer>
+    <footer>Brian Namgung</footer>
+    <br>
 
-                            <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
-                            </script>
-                            <p><a href= "http://www.thebeerstore.ca/beer-101" target= "_black">Beer Newbies Click Here</a></p>
-                          </fieldset>
-
-                          <section id= "link-bar">
-                            <img class= "link-bar" src= "images\fb.png" alt="">
-                            <img class= "link-bar" src= "images\twitter.png" alt="">
-                            <img class= "link-bar" src= "images\instagram.png" alt="">
-                          </section>
-
-                          <br>
-                          <br>
-                          <footer>Code 201 Final Project</footer>
-                          <footer>Brian Namgung</footer>
-                          <br>
-
-                        </body>
-
-                        </html>
+  </body>
+</html>

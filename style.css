@@ -41,6 +41,10 @@ table{
   align-content: flex-start;
 }
 
+tr{
+  text-align: center;
+  left: auto;
+}
 form{
   align-items: center;
 }
@@ -54,12 +58,15 @@ a{
 
 fieldset {
   background-position: center;
-  width: 960px;
+  width: 950px;
   margin: 0 auto;
 }
 
 ul{
   margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
+
 }
 
 #link-bar{
@@ -76,4 +83,10 @@ ul{
   justify-content: space-around;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+div id= "two"{
+max-width: 0;
+max-height: 0;
+text-align: center;
 }
