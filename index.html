@@ -1,74 +1,93 @@
-<!--final proj-->
-<!DOCTYPE html>
-<html>
-<head>
-  <h1>G O O G L E ----------- M A P ----------- D E M O</h1>
-  <br>
-  <fieldset>
+  <!--final proj-->
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <h1>G O O G L E ----------- M A P ----------- D E M O</h1>
+    <link href="style.css" rel="stylesheet"/>
+    <href= "http://www.webpage.com"/>
+    <src= "app.js">
+
+
     <br>
-    <br>
-    <legend>
-      L O C A T I O N
-    </legend>
+    <fieldset>
+      <br>
+      <br>
+      <legend>
+        L O C A T I O N
+      </legend>
 
-    <ul>
-      <table width= "400" cellpadding= "10" cellspacing= "5">
-        <tr>
-          <th><li><a href="">PLACE ONE</th>
-            <th><li><a href="">PLACE TWO</th>
-              <th><li><a href="">PLACE THREE</th>
-                <th><li><a href="">PLACE FOUR</th>
-                  <th><li><a href="">PLACE FIVE</th>
-                  </tr>
-                  <table>
-                  </ul>
-                  <br>
-                  <br>
+      <form>
+        <ul>
+          <table width= "400" cellpadding= "10" cellspacing= "5">
+            <tr>
+              <th><li><a href="">PLACE ONE</th>
+                <th><li><a href="">PLACE TWO</th>
+                  <th><li><a href="">PLACE THREE</th>
+                    <th><li><a href="">PLACE FOUR</th>
+                      <th><li><a href="">PLACE FIVE</th>
+                        <th><li><a href="">PLACE SIX</th>
+                          <th><li><a href="">PLACE SEVEN</th>
+                            <th><li><a href="">PLACE EIGHT</th>
+                              <th><li><a href="">PLACE NINE</th>
+                                <th><li><a href="">PLACE TEN</th>
+                                </tr>
+                                <table>
+                                </ul>
+                              </form>
+                              <br>
+                              <br>
 
-                  <fieldset>
-                    <p>PLEASE SELECT LOCATION ABOVE</p>
-                  </fieldset>
-                </fieldset>
+                              <fieldset>
+                                <p>PLEASE SELECT LOCATION ABOVE FOR DIRECTIONS</p>
+                              </fieldset>
+                            </fieldset>
 
-                <br>
-                <br>
+                            <br>
+                            <br>
 
-                <div id= "map"></div>
+                            <div id= "map"></div>
 
-                <br>
-                <br>
+                            <br>
+                            <br>
 
-                <fieldset>
-                <style>
+                            <fieldset>
+                            <style>
 
-                #map{
-                  width: 100%;
-                  height: 400px;
-                  background-color: grey;
-                }
-                </style>
-              </head>
+                            #map{
+                              width: 100%;
+                              height: 400px;
+                              background-color: grey;
+                            }
+                            </style>
+                          </head>
 
-              <body>
+                          <body>
 
-                <script>
-                function initMap(){
-                  var uluru= {lat: 47.608013, lng: -122.335167};
-                  var map= new google.maps.Map(document.getElementById('map'),{
-                    zoom: 4,
-                    center: uluru
-                  });
-                  var maker= new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                  });
-                }
-                </script>
+                            <script>
+                            function initMap(){
+                              var uluru= {lat: 47.608013, lng: -122.335167};
+                              var map= new google.maps.Map(document.getElementById('map'),{
+                                zoom: 4,
+                                center: uluru
+                              });
+                              var maker= new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                              });
+                            }
+                            </script>
 
-                <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
-                </script>
-                <p>LOCATE YOUR DESTINATION</p>
-              </fieldset>
+                            <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
+                            </script>
+                            <p><a href= "http://www.thebeerstore.ca/beer-101" target= "_black">Beer Newbies Click Here</a></p>
+                          </fieldset>
 
-            </body>
-            </html>
+                          <br>
+                          <br>
+                          <footer>Code 201 Final Project</footer>
+                          <footer>Brian Namgung</footer>
+                          <br>
+
+                        </body>
+                        </html>
