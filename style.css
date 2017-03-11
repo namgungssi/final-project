@@ -2,6 +2,7 @@ h1{
   font-family: fantasy, impact;
   font-weight: bold;
   font-style: italic;
+  text-align: center;
 }
 
 p{
@@ -9,12 +10,20 @@ p{
   font-weight: lighter;
   font-style: italic;
   font-size: 100px;
+  text-align: center;
 }
 
 body{
   background-color: green;
+  text-align: center;
 }
 
 head{
   background-color: blue;
+  text-align: center;
+}
+
+legend{
+  text-align: center;
+  text-decoration-style: solid;
 }

@@ -1,42 +1,58 @@
-<!--final proj-->
-<!DOCTYPE html>
-<html>
-<head>
+  <!--final proj-->
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <h1>Google Maps Demo</h1>
+<fieldset>
+<legend>
+  Locations
+</legend>
 
-  <br>
-  <br>
-  <h1>Google Maps Demo</h1>
-  <p>This is a paragraph</p>
-  <br>
-  <br>
+    <ul>
+      <table width= "400" cellpadding= "10" cellspacing= "5">
+        <tr>
+      <th><li><a href="">Place One</th>
+        <th><li><a href="">Place Two</th>
+          <th><li><a href="">Place Three</th>
+            <th><li><a href="">Place Four</th>
+              <th><li><a href="">Place Five</th>
+</tr>
+<table>
+    </ul>
 
-  <div id= "map"></div>
+    <p>This is a paragraph</p>
+</fieldset>
+
+<br>
+<br>
+
+    <div id= "map"></div>
 
 
-  <style>
-  #map{
-    width: 100%;
-    height: 400px;
-    background-color: grey;
-  }
-  </style>
-</head>
-<body>
+    <style>
+    #map{
+      width: 100%;
+      height: 400px;
+      background-color: grey;
+    }
+    </style>
+  </head>
+  <body>
 
-  <script>
-  function initMap(){
-    var uluru= {lat: 47.608013, lng: -122.335167};
-    var map= new google.maps.Map(document.getElementById('map'),{
-      zoom: 4,
-      center: uluru
-    });
-    var maker= new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-  }
-  </script>
-  <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
-  </script>
-</body>
-</html>
+    <script>
+    function initMap(){
+      var uluru= {lat: 47.608013, lng: -122.335167};
+      var map= new google.maps.Map(document.getElementById('map'),{
+        zoom: 4,
+        center: uluru
+      });
+      var maker= new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+    </script>
+    <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
+    </script>
+  </body>
+  </html>
