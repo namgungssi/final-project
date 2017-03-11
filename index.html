@@ -1,58 +1,74 @@
-  <!--final proj-->
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <h1>Google Maps Demo</h1>
-<fieldset>
-<legend>
-  Locations
-</legend>
+<!--final proj-->
+<!DOCTYPE html>
+<html>
+<head>
+  <h1>G O O G L E ----------- M A P ----------- D E M O</h1>
+  <br>
+  <fieldset>
+    <br>
+    <br>
+    <legend>
+      L O C A T I O N
+    </legend>
 
     <ul>
       <table width= "400" cellpadding= "10" cellspacing= "5">
         <tr>
-      <th><li><a href="">Place One</th>
-        <th><li><a href="">Place Two</th>
-          <th><li><a href="">Place Three</th>
-            <th><li><a href="">Place Four</th>
-              <th><li><a href="">Place Five</th>
-</tr>
-<table>
-    </ul>
+          <th><li><a href="">PLACE ONE</th>
+            <th><li><a href="">PLACE TWO</th>
+              <th><li><a href="">PLACE THREE</th>
+                <th><li><a href="">PLACE FOUR</th>
+                  <th><li><a href="">PLACE FIVE</th>
+                  </tr>
+                  <table>
+                  </ul>
+                  <br>
+                  <br>
 
-    <p>This is a paragraph</p>
-</fieldset>
+                  <fieldset>
+                    <p>PLEASE SELECT LOCATION ABOVE</p>
+                  </fieldset>
+                </fieldset>
 
-<br>
-<br>
+                <br>
+                <br>
 
-    <div id= "map"></div>
+                <div id= "map"></div>
 
+                <br>
+                <br>
 
-    <style>
-    #map{
-      width: 100%;
-      height: 400px;
-      background-color: grey;
-    }
-    </style>
-  </head>
-  <body>
+                <fieldset>
+                <style>
 
-    <script>
-    function initMap(){
-      var uluru= {lat: 47.608013, lng: -122.335167};
-      var map= new google.maps.Map(document.getElementById('map'),{
-        zoom: 4,
-        center: uluru
-      });
-      var maker= new google.maps.Marker({
-        position: uluru,
-        map: map
-      });
-    }
-    </script>
-    <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
-    </script>
-  </body>
-  </html>
+                #map{
+                  width: 100%;
+                  height: 400px;
+                  background-color: grey;
+                }
+                </style>
+              </head>
+
+              <body>
+
+                <script>
+                function initMap(){
+                  var uluru= {lat: 47.608013, lng: -122.335167};
+                  var map= new google.maps.Map(document.getElementById('map'),{
+                    zoom: 4,
+                    center: uluru
+                  });
+                  var maker= new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+                }
+                </script>
+
+                <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
+                </script>
+                <p>LOCATE YOUR DESTINATION</p>
+              </fieldset>
+
+            </body>
+            </html>
