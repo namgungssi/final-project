@@ -14,7 +14,6 @@ h1{
 }
 
 p{
-  text-align: center;
   text-decoration-style: solid;
   text-align: center;
 }
@@ -23,7 +22,7 @@ body{
   text-align: center;
   position: relative;
   width: 100%;
-  
+
 }
 
 head{
@@ -38,7 +37,8 @@ legend{
 table{
   text-align: center;
   align-items: center;
-  align-content: flex-end;
+  margin-right: auto;
+  margin-left: auto;
   align-content: flex-start;
 }
 
@@ -52,12 +52,22 @@ form{
 
 a{
   text-align: center;
-  font-size: 35px;
-  font-style: oblique;
-  font-family: fantasy;
+  font-style: bold;
   color: black;
   text-decoration: none;
 }
+
+label{
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  }
+
+input, label {
+    float: none;
+}
+
 
 fieldset {
   background-position: center;
@@ -97,6 +107,10 @@ ul{
   margin-right: auto;
 }
 
+.footer{
+  text-align: center;
+  text-decoration-style: solid;
+}
 
 /*
 div id= "two"{
