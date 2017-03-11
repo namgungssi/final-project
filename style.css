@@ -1,5 +1,6 @@
 html{
   text-align: center;
+  background-color: ivory;
 }
 
 h1{
@@ -54,6 +55,7 @@ a{
   font-size: 30px;
   font-family: fantasy;
   font-style: italic;
+  color: navy;
 }
 
 fieldset {
