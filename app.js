@@ -1,12 +1,40 @@
-//map
+var DirectionsService =
 
-// var map;
-// function initMap(){
-//   map= new google.maps.Map(document.getElementById('map'), {
-//     center: {lat: 47.608013, lng: -122.335167}, //Seattle Location
-//     zoom: 8
-//   });
-// }
-//
-//
-// map= new google.maps.Map(document.getElementById("map"), {...});
+DirectionsService.route(){
+  origin: LatLng | String | google.maps.Place,
+  destination: LatLng | String | google.maps.Place,
+  travelMode: travelMode,
+  drivingOptions: DrivingOptions,
+  unitSytem: UnitSystem,
+  waypoints[]: DirectionsWaypoint,
+  optimizeWaypoints: Boolean,
+  provideRouteAlternatives: Boolean,
+  avoidHighways: Boolean,
+  avoidTolls: Boolean,
+  region: String
+}
+
+{
+  origin: 'Seattle, WA',
+  destination: 'Tacoma, WA'
+  waypoints: [
+    {
+      location: 'Joplin, MO',
+      stopover: false
+    },{
+      location: 'Oklahoma City, OK',
+      stopover:true
+    }],
+    provideRouteAlternatives: false,
+    travelMode: 'DRIVING',
+    drivingOptions: {
+      departureTime: new Date(),
+      trafficModel: 'pessimistic'
+    },
+    unitSytem: google.maps.UnitSytem.IMPERIAL
+    }
+
+{
+  departureTime: Date,
+  trafficModelL trafficModel
+}
