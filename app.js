@@ -32,9 +32,9 @@ DirectionsService.route(){
       trafficModel: 'pessimistic'
     },
     unitSytem: google.maps.UnitSytem.IMPERIAL
-    }
+  }
 
-{
-  departureTime: Date,
-  trafficModelL trafficModel
-}
+  {
+    departureTime: Date,
+    trafficModelL trafficModel
+  }
