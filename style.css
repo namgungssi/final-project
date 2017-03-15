@@ -4,7 +4,6 @@ html{
   display: block;
   border: 15px solid black;
 }
-
 h1{
   font-family: fantasy, impact;
   font-weight: bold;
@@ -12,12 +11,10 @@ h1{
   text-align: center;
   font-size: 70px;
 }
-
 p{
   text-decoration-style: solid;
   text-align: center;
 }
-
 body{
   text-align: center;
   position: relative;
@@ -26,17 +23,14 @@ body{
   margin: 0;
   padding: 0;
 }
-
 head{
   text-align: center;
 }
-
 legend{
   text-align: center;
   text-decoration-style: solid;
   font-size: 30px;
 }
-
 table{
   text-align: center;
   align-items: center;
@@ -44,7 +38,6 @@ table{
   margin-left: auto;
   align-content: flex-start;
 }
-
 tr{
   text-align: center;
   left: auto;
@@ -52,39 +45,37 @@ tr{
 form{
   align-items: center;
 }
-
 a{
   text-align: center;
   font-style: bold;
   color: black;
   text-decoration: none;
 }
-
 label{
   text-align: center;
   color: black;
   text-decoration: none;
   font-weight: lighter;
 }
-
+.stackLabel {
+  display: block;
+  margin: 10px;
+  border: 2px black solid;
+  padding: 10px;
+}
 input, label {
   float: none;
 }
-
-
 fieldset {
   background-position: center;
   width: 950px;
   margin: 0 auto;
 }
-
 ul{
   margin: 0 auto;
   text-align: center;
   list-style-type: none;
-
 }
-
 #link-bar{
   padding: .5em;
   display: flex;
@@ -101,12 +92,10 @@ ul{
   border-radius: 5px;
   background-color: ivory;
 }
-
 .footer{
   text-align: center;
   text-decoration-style: solid;
 }
-
 #floating-panel {
   position: absolute;
   top: 10px;
@@ -120,9 +109,19 @@ ul{
   line-height: 30px;
   padding-left: 10px;
 }
-
-
-
+#map {
+  height: 75%;
+}
+html, body {
+  height: 100%;
+  padding: 0;
+  width: 100%;
+  /*max-width: 80%;
+  max-height: 80%;*/
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*
 div id= "two"{
 max-width: 0;

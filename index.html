@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <h1>G O O G L E _ M A P _ D E M O</h1>
   <link href="style.css" rel="stylesheet"/>
   <link href= "http://www.webpage.com"/>
   <link src= "app.js">
@@ -10,61 +9,47 @@
   <title>Directions service</title>
 </head>
 <body>
-  <style>
-  /* Always set the map height explicitly to define the size of the div
-  * element that contains the map. */
-  #map {
-    height: 75%;
-    width: 100%;
-    max-width: 80%;
-    max-height: 80%;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  </style>
+  <header><h1>G O O G L E  M A P  D E M O</h1></header>
+  <section id= "link-bar">
+    <a href= "https://www.facebook.com/brian.namgung" target= "blank"><img class= "link-bar" src= "images/fb.png" alt= ""></a>
+    <a href= "https://twitter.com/namgungssi" target="blank"><img class= "link-bar" src= "images/twitter.png" alt=""></a>
+    <a href= "https://www.instagram.com/namgungdalhun/" target= "blank"><img class= "link-bar" src= "images/instagram.png" alt=""></a>
+  </section>
   <fieldset>
     <legend>L O C A T I O N</legend>
     <form>
       <table width= "500" cellpadding= "10" cellspacing= "5">
         <tr>
-          <label><a href="">L O C A T I O N &nbsp; 1</a></label>
-          <label><a href="">L O C A T I O N &nbsp; 2</a></label>
-          <label><a href="">L O C A T I O N &nbsp; 3</a></label>
-          <label><a href="">L O C A T I O N &nbsp; 4</a></label>
-          <label><a href="">L O C A T I O N &nbsp; 5</a></label>
-          <label><a href="">L O C A T I O N &nbsp; 6</a></label>
+          <label class="stackLabel"><a href="">L O C A T I O N &nbsp; 1</a></label>
+          <label class="stackLabel"><a href="">L O C A T I O N &nbsp; 2</a></label>
+          <label class="stackLabel"><a href="">L O C A T I O N &nbsp; 3</a></label>
+          <label class="stackLabel"><a href="">L O C A T I O N &nbsp; 4</a></label>
+          <label class="stackLabel"><a href="">L O C A T I O N &nbsp; 5</a></label>
+          <label class="stackLabel"><a href="">L O C A T I O N &nbsp; 6</a></label>
         </tr>
       </table>
     </form>
     <p>- P L E A S E &nbsp; C L I C K &nbsp; A B O V E &nbsp; F O R &nbsp; D I R E C T I O N S -</p>
   </fieldset>
-
-    <div id="map"></div>
-    <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap">
+  <div id="map"></div>
+  <script async defer src= "http://maps.googleapis.com/maps/api/js?key=AIzaSyBjYlQzn2-ooH7wuWXDtIYDUvDl9105cqM&callback=initMap"></script>
+  <script>
+    var map;
     function initMap() {
       var uluru= {lat: 47.6181571, lng:  -122.3540385}
       var directionsService = new google.maps.DirectionsService;
       var directionsDisplay = new google.maps.DirectionsRenderer;
+
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 7,
         center: uluru
-    });
-    directionsDisplay.setMap(map);
-    var maker= new google.maps.Marker({
-      position: uluru,
-      map: map
-    })
-};
-</script>
-  <section id= "link-bar">
-    <a href= "https://www.facebook.com/brian.namgung" target= "blank"</a>
-      <img class= "link-bar" src= "images/fb.png" alt= ""></a>
-      <a href= "https://twitter.com/namgungssi" target="blank"</a>
-        <img class= "link-bar" src= "images/twitter.png" alt=""></a>
-        <a href= "https://www.instagram.com/namgungdalhun/" target= "blank"</a>
-          <img class= "link-bar" src= "images/instagram.png" alt=""></a>
-        </section>
-
+      });
+      directionsDisplay.setMap(map);
+      var maker= new google.maps.Marker({
+        position: uluru,
+        map: map
+      })
+    };
+  </script>
 </body>
 </html>
