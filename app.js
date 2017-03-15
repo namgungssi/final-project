@@ -1,4 +1,7 @@
-var DirectionsService =
+
+
+
+/*var DirectionsService =
 
 DirectionsService.route(){
   origin: LatLng | String | google.maps.Place,
