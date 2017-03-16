@@ -66,6 +66,7 @@ input, label {
 }
 fieldset {
   background-position: center;
+  text-align: center;
   width: 950px;
   margin: 0 auto;
 }
