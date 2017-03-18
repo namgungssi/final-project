@@ -4,20 +4,20 @@ function initMap(){
     center: {lat: -33.9, lng: 151.2}
   });
 
-//navigation with text attempt
-// var DirectionsRequest(){
-//   origin: LatLng | String | google.maps.Place,
-//   destination: LatLng | String | google.maps.Place,
-//   travelMode: TravelMode,
-//   transitOptions: TransitOptions,
-//   drivingOptions: DrivingOptions,
-//   unitSystem: UnitSystem,
-//   waypoints[]: DirectionsWaypoint,
-//   optimizeWaypoints: Boolean,
-//   provideRouteAlternatives: Boolean,
-//   avoidHighways: Boolean,
-//   avoidTolls: Boolean,
-//   region: String
-// }
-//
-// DirectionsService.route()
+
+var DirectionsRequest(){
+  origin: LatLng | String | google.maps.Place,
+  destination: LatLng | String | google.maps.Place,
+  travelMode: TravelMode,
+  transitOptions: TransitOptions,
+  drivingOptions: DrivingOptions,
+  unitSystem: UnitSystem,
+  waypoints[]: DirectionsWaypoint,
+  optimizeWaypoints: Boolean,
+  provideRouteAlternatives: Boolean,
+  avoidHighways: Boolean,
+  avoidTolls: Boolean,
+  region: String
+}
+
+DirectionsService.route()
