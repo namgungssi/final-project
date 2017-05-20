@@ -6,9 +6,9 @@ html{
 }
 
 h1{
-  font-family: fantasy, impact;
-  font-weight: bold;
+  font-family: impact;
   font-style: italic;
+  font-weight: bold;
   text-align: center;
   font-size: 70px;
 }
