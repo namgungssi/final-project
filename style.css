@@ -1,1 +1,131 @@
-/*stylesheet/*
+html{
+  text-align: center;
+  background-color: ivory;
+  display: block;
+}
+
+h1{
+  font-family: impact;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 70px;
+}
+
+p{
+  text-decoration-style: solid;
+  text-align: center;
+}
+
+body{
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+head{
+  text-align: center;
+}
+
+legend{
+  text-align: center;
+  text-decoration-style: solid;
+  font-size: 30px;
+}
+
+table{
+  text-align: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  align-content: flex-start;
+}
+
+tr{
+  text-align: center;
+  left: auto;
+}
+form{
+  align-items: center;
+}
+
+a{
+  text-align: center;
+  font-style: bold;
+  color: black;
+  text-decoration: none;
+}
+
+label{
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+input, label {
+  float: none;
+}
+
+
+fieldset {
+  background-position: center;
+  width: 950px;
+  margin: 0 auto;
+}
+
+ul{
+  margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
+
+}
+
+#link-bar{
+  padding: .5em;
+  display: flex;
+  flex-direction: row;
+  position:fixed;
+  right: 0;
+  top: 0%;
+  background-color: white;
+  color: black;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: ivory;
+}
+
+.footer{
+  text-align: center;
+  text-decoration-style: solid;
+}
+
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+
+
+
+/*
+div id= "two"{
+max-width: 0;
+max-height: 0;
+text-align: center;
+}*/
