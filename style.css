@@ -1,8 +1,7 @@
 html{
   text-align: center;
-  background-color: ivory;
+  background-color: #FFFF00;
   display: block;
-  border: 15px solid black;
 }
 
 h1{
@@ -97,9 +96,8 @@ ul{
   list-style: none;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid black;
   border-radius: 5px;
-  background-color: ivory;
+  background-color: #FFFF00;
 }
 
 .footer{
@@ -119,6 +117,7 @@ ul{
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 10px;
+  background-color: #FFFF00;
 }
 
 
